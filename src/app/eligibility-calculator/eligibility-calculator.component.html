@@ -1,0 +1,60 @@
+<form [formGroup]="ECForm" class="eligibilityForm">
+  <div class="getInfo">
+    <legend>Eligibility Calculator</legend>
+    <label id="monthlyIncome">
+      <h5>Monthly Income</h5>
+      <h4>{{ this.ECForm.get('monthlyIncome').value }}</h4>
+      <input type="range" name="monthlyIncome" id="monthlyIncome" min="100000" max="300000"
+        formControlName="monthlyIncome">
+    </label>
+
+    <label id="monthlyExpense">
+      <h5>Monthly Expense</h5>
+      <h4>{{ this.ECForm.get('monthlyExpense').value  }}</h4>
+      <input type="range" name="monthlyExpense" id="monthlyExpense" min="0" max="50000"
+        formControlName="monthlyExpense">
+    </label>
+
+    <label id="repayTenure">
+      <h4>Repayment Tenure</h4>
+      <select name="repayTenure" id="repayTenure">
+        <option value="6">
+          <h4>6 months</h4>
+        </option>
+        <option value="12">
+          <h4>12 months</h4>
+        </option>
+        <option value="18">
+          <h4>18 months</h4>
+        </option>
+      </select>
+    </label>
+
+
+    <label for="">
+      <h4>Do you have any existing loans ?</h4>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="round"></span>
+      </label>
+    </label>
+
+    <label for="">
+      <h4>EMI for existing loan(opt)</h4>
+      <input type="text" name="" id="">
+    </label>
+  </div>
+
+  <div formGroup="getMoney" class="getMoney">
+    <label>
+      <h5>Loan Amount</h5>
+      <h4>{{ this.ECForm.get('monthlyIncome').value -this.ECForm.get('monthlyExpense').value}}</h4>
+    </label>
+    <label>
+      <h5>Monthly EMI</h5>
+      <h4>{{ ((this.ECForm.get('monthlyIncome').value -this.ECForm.get('monthlyExpense').value)) }}</h4>
+    </label>
+    <label><a href="/getmoney" target="_blank"><button id="getMoney" type="submit">GET MONEY</button></a></label>
+  </div>
+
+</form>

@@ -1,0 +1,49 @@
+
+.main-container {
+    min-height: calc(100vh - 200px)
+
+}
+
+
+.main-container .content .title1{
+    position: absolute;
+    left: 189px;
+    top:270px;
+    width: 407px;
+    height: 98px;
+}
+
+.main-container .content .title1 .title1-text{
+    font-size: 40px;
+    text-align: left;
+    line-height: 49px;
+    color: #000;
+    opacity: 1;
+    font-family: 'Montserrat-Medium';
+}
+
+.main-container .content .title1 .line{
+    width: 236px;
+    height: 8px;
+    background-color: #000;
+    opacity: 70%;
+    border-radius: 13px;
+}
+
+.main-container .content .img-collect{
+    position: absolute;
+    top: 466px;
+    left: 136px;
+    width: 652px;
+    height: 365px;
+    opacity: 1;
+}
+
+.main-container .content .group6{
+    position: absolute;
+    top: 270px;
+    left: 1100px;
+    width: 688px;
+    height: 675px;
+    opacity: 1;
+}

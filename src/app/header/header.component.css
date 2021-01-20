@@ -1,0 +1,92 @@
+header{
+    display:block;
+}
+
+.home-header{
+    top:27px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 10;
+    width:1920px;
+    height: 123px;
+}
+
+.home-header .navbar{
+    display: flex;
+    align-items: center;
+    max-width: 88%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.home-header .navbar .navbar-brand{
+    cursor: pointer;
+}
+
+.logo{
+    width: 90%;
+}
+
+.home-header .navbar .navbar-list > ul{
+    
+    list-style: none;
+    padding-left: 757px;
+    padding-bottom: 25px;
+}
+
+.home-header .navbar .navbar-list > ul > li{
+    float: left;
+    text-align: left;
+    font-size: 25px;
+    line-height: 50px;
+    width: 103px;
+    height: 34px;
+    font: normal normal normal 25px/34px Open Sans;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    margin-right: 50px;
+}
+
+.home-header .navbar .navbar-button{
+    display: flex;
+}
+.home-header .navbar .navbar-button > a{
+    margin: 0 10px;
+}
+
+.home-header .navbar .nav-link{
+    font-size: 25px;
+    color: #222;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dark-btn-outline{
+    box-sizing: border-box;
+    border: 2px solid #639;
+    cursor: pointer;
+    background: 0 0;
+    color: #639;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 35px;
+    min-height: 40px;
+    min-width: 116px;
+}
+
+.primary-btn-color{
+    box-sizing: border-box;
+    min-height: 40px;
+    min-width: 116px;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 35px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg,#9f62c9 0,#639 100%);
+    color:#fff;
+}
